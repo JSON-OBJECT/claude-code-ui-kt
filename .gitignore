@@ -1,0 +1,150 @@
+# Gradle
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Kotlin/Java
+*.class
+*.jar
+!gradle-wrapper.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# IntelliJ IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+# Eclipse
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+
+# Node.js (for potential frontend build tools)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Application Logs
+logs/
+*.log
+application.log
+server.log
+gradle_output.log
+
+# Spring Boot
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# Claude CLI specific
+.claude/
+claude-sessions/
+*.claude-session
+claude-temp/
+
+# Temporary files
+*.swp
+*.swo
+*~
+.tmp/
+temp/
+tmp/
+
+# Package Files
+*.dmg
+*.pkg
+*.deb
+*.rpm
+
+# IDE-specific Kotlin files
+.kotlin
+kotlin-js-store/
+
+# Gradle temporary files
+.gradle-temp/
+
+# Build artifacts that might contain sensitive data
+gradle-temp/
+build-temp/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Cache directories
+.cache/
+.tmp/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Spring Boot DevTools
+.spring-boot-devtools.properties
+
+# Application specific temp directories
+claude-output/
+sessions-backup/

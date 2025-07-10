@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: claude-code-ui-kt
+
+logging:
+  level:
+    com.jsonobject.claude: INFO
+    org.springframework.web.servlet.mvc.method.annotation.SseEmitter: DEBUG
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+claude:
+  cli:
+    path: "~/.claude/local/claude"
+    default:
+      model: "sonnet"
+      output-format: "stream-json"
+      verbose: true
+      max-turns: 20
+      timeout-minutes: 30
+    presets: {}
+
+  environment:
+    basic:
+      term: "dumb"
+      shell: "/bin/bash"
+    debug:
+      claude-debug: false
+      claude-trace: false
+      log-level: "INFO"
